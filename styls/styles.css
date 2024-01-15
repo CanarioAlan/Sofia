@@ -1,0 +1,111 @@
+:root {
+  /* colores */
+  --CFondo: #320339;
+  --CPrincipal: #d891ab;
+  --CSecundario: #f8b9a7;
+  /* fuente */
+  --Font: "Nunito", sans-serif;
+}
+/* generales */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 16px;
+  background-color: var(--CFondo);
+  font-family: var(--Font);
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.header {
+  height: 5.5rem;
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 10px 5px 0px rgba(20, 1, 23, 0.5);
+}
+.header__logo-img {
+  width: 3rem;
+}
+.header__nav {
+  position: relative;
+}
+.presentacion {
+  margin: 2rem auto;
+  text-align: center;
+}
+.presentacion__layaud {
+  position: relative;
+}
+.presentacion__layaud-img,
+.presnetacion__layaud-fondo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  margin: 0 auto;
+}
+.presentacion__layaud-img {
+  width: 15rem;
+  border-radius: 50%;
+  z-index: 2;
+  filter: grayscale(5);
+}
+.presnetacion__layaud-fondo {
+  width: 15rem;
+  height: 22.5rem;
+  background-color: rgba(216, 145, 171, 0.2);
+  transform: rotate(25deg);
+  border-radius: 50%;
+}
+.presentacion__titulo {
+  width: 18rem;
+  margin: 0 auto;
+  margin-top: 25rem;
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: var(--CPrincipal);
+}
+.presentacion__sub,
+.presentacion__descripcion {
+  color: var(--CSecundario);
+}
+.presentacion__sub {
+  font-size: 2.5rem;
+}
+.presentacion__descripcion {
+  width: 30rem;
+  margin: 2.5rem auto;
+}
+.sertificados {
+  height: 16rem;
+  padding: 1.5rem 0;
+  display: flex;
+  background-color: var(--CPrincipal);
+  justify-content: space-evenly;
+}
+.sertificados__calidad,
+.sertificados__personalizacion,
+.sertificados__dedicacion {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.sertificados__personalizacion {
+  margin-top: 6.8rem;
+}
