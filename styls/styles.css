@@ -3,6 +3,8 @@
   --CFondo: #320339;
   --CPrincipal: #d891ab;
   --CSecundario: #f8b9a7;
+  --CSombras: #4d1355;
+  --CsombraClara: rgba(77, 19, 85 0.5);
   /* fuente */
   --Font: "Nunito", sans-serif;
 }
@@ -43,6 +45,7 @@ p {
 .header__nav {
   position: relative;
 }
+/* presentacion */
 .presentacion {
   margin: 2rem auto;
   text-align: center;
@@ -91,6 +94,7 @@ p {
   width: 30rem;
   margin: 2.5rem auto;
 }
+/* sertificados  */
 .sertificados {
   height: 16rem;
   padding: 1.5rem 0;
@@ -108,4 +112,182 @@ p {
 }
 .sertificados__personalizacion {
   margin-top: 6.8rem;
+}
+/* herramientas y productos  */
+.productos__img {
+  position: relative;
+}
+.productos__texto {
+  font-size: 2rem;
+  color: var(--CPrincipal);
+}
+.productos__texto span {
+  color: var(--CSecundario);
+  font-style: italic;
+}
+.productos__texto-productos {
+  width: 24rem;
+  margin: 2rem 0 0 2rem;
+}
+.productos__texto-herramientas {
+  margin: 27rem 2rem 0 0;
+  text-align: right;
+}
+.productos__img-herramientas,
+.productos__img-productos,
+.productos__img-sombra {
+  width: 22rem;
+  height: 19rem;
+  background-color: var(--CSombras);
+  border-radius: 0 60px 60px 0;
+  position: absolute;
+  top: 50px;
+}
+.productos__img-productos,
+.productos__img-herramientas {
+  background-size: 280px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.productos__img-productos {
+  background-image: url(../Img/productos.jpg);
+  z-index: 2;
+}
+.productos__img-sombraProductos {
+  margin: 0 0 0 15px;
+}
+.productos__img-sombraClaraProductos {
+  margin: 0 0 0 30px;
+  background-color: rgba(77, 19, 85, 0.5);
+}
+.productos__img-herramientas {
+  background-image: url(../Img/herramientas.jpg);
+  z-index: 2;
+  top: 60px;
+}
+.productos__img-herramientas,
+.productos__img-sombraHerramientas,
+.productos__img-sombraClaraHerramientas {
+  top: 60px;
+  border-radius: 60px 0 0 60px;
+  right: 0;
+}
+.productos__img-sombraHerramientas {
+  margin: 0 15px 0 0;
+}
+.productos__img-sombraClaraHerramientas {
+  margin: 0 30px 0 0;
+  background-color: rgba(77, 19, 85, 0.5);
+}
+/* servicios  */
+.servicios {
+  margin-top: 300px;
+  height: 480px;
+  background-color: var(--CPrincipal);
+  text-align: center;
+  position: relative;
+}
+.servicios__titulo {
+  color: var(--CFondo);
+  font-size: 3.5rem;
+}
+.servicios__wave-superior {
+  width: 100%;
+  height: 70px;
+  transform: rotate(180deg);
+  background-image: url(../Img/wave.svg);
+  background-repeat: none;
+  background-size: 600px;
+}
+.servicios__items {
+  width: 190px;
+  height: 274px;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 1.5rem 0 0 3.7rem;
+  box-shadow: -8px 7px 16.8px 3px rgba(77, 19, 85, 0.25);
+}
+.servicios__item {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.servicios_wave-inferior {
+  width: 100%;
+  height: 70px;
+  background-image: url(../Img/wave-abajo.svg);
+  transform: rotate(180deg);
+  background-repeat: none;
+  background-size: 600px;
+  position: absolute;
+  bottom: -69px;
+}
+.servicios__decoracion-img,
+.servicios__decoracion-sombra,
+.servicios__decoracion-sombraClara {
+  width: 140px;
+  height: 70px;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  border-radius: 50%;
+}
+.servicios__decoracion-img {
+  transform: rotate(20deg);
+  background-image: url(../Img/capping.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.servicios__decoracion-sombra {
+  transform: rotate(27deg);
+  background-color: #b25a7b;
+}
+.servicios__decoracion-sombraClara {
+  transform: rotate(35deg);
+  background-color: rgba(178, 90, 123, 0.5);
+}
+.servicios__decoracionG-img,
+.servicios__decoracionG-sombra,
+.servicios__decoracionG-sombraClara {
+  width: 180px;
+  height: 90px;
+  position: absolute;
+  top: 355px;
+  right: -49px;
+  border-radius: 50%;
+}
+.servicios__decoracionG-img {
+  transform: rotate(20deg);
+  background-image: url(../Img/sculpidas.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.servicios__decoracionG-sombra {
+  transform: rotate(27deg);
+  background-color: #b25a7b;
+}
+.servicios__decoracionG-sombraClara {
+  transform: rotate(35deg);
+  background-color: rgba(178, 90, 123, 0.5);
+}
+.galeria {
+  margin-top: 5rem;
+  text-align: center;
+}
+.galeria__titulo {
+  color: var(--CPrincipal);
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.galeria__carrusel {
+  display: flex;
+  justify-content: space-evenly;
+}
+.galeria__imgs {
+  position: relative;
 }
