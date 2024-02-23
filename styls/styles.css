@@ -105,7 +105,7 @@ img {
 /* sertificados  */
 .sertificados {
   height: 16rem;
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
   display: flex;
   background-color: var(--CPrincipal);
   justify-content: space-evenly;
@@ -120,6 +120,9 @@ img {
 }
 .sertificados__personalizacion {
   margin-top: 6.8rem;
+}
+.sertificados img {
+  width: 5rem;
 }
 /* herramientas y productos  */
 .productos__img {
