@@ -213,7 +213,6 @@ img {
 }
 
 .servicios__items {
-  width: 210px;
   height: 330px;
   padding: 1rem;
   border-radius: 2rem;
@@ -222,6 +221,8 @@ img {
   position: absolute;
   z-index: 2;
   background-color: var(--CPrincipal);
+  left: 20px;
+  right: 120px;
 }
 .servicios__item {
   display: flex;
@@ -245,6 +246,7 @@ img {
   bottom: 0px;
   background-color: var(--CFondo);
 }
+
 .servicios__decoracion-img,
 .servicios__decoracion-sombra,
 .servicios__decoracion-sombraClara {
@@ -252,7 +254,7 @@ img {
   height: 75px;
   position: absolute;
   top: 131px;
-  right: -15px;
+  right: 1px;
   border-radius: 50%;
   z-index: 0;
   opacity: 0.9;
